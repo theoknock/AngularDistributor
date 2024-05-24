@@ -5,13 +5,6 @@
 //  Created by Xcode Developer on 5/24/24.
 //
 
-//
-//  ContentView.swift
-//  AngularDistributor
-//
-//  Created by Xcode Developer on 5/24/24.
-//
-
 import SwiftUI
 
 func scale(oldMin: Double, oldMax: Double, value: Double, newMin: Double, newMax: Double) -> Double {

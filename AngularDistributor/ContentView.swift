@@ -27,6 +27,8 @@ struct ContentView: View {
             List(0..<firstAngles.count, id: \.self) { index in
                 VStack(alignment: .leading) {
                     Text("\(Int(minusThresholdAngles[index]))° < \(Int(firstAngles[index]))° < \(Int(plusThresholdAngles[index]))° = \(Int(differences[index]))°")
+                    Text("\(scale(oldMin: 0.0, oldMax: 360.0, value: firstAngles[index], newMin: 0.0, newMax: 1.0))")
+                    Text("\(scale(oldMin: 0.0, oldMax: 360.0, value: differences[index], newMin: 0.0, newMax: 1.0))")
                 }
             }
         }
